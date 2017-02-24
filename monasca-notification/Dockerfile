@@ -1,6 +1,6 @@
 FROM alpine:3.5
 
-ARG NOTIFICATION_REPO=https://git.openstack.org/openstack/monasca-notification
+ARG NOTIFICATION_REPO=https://github.com/sapcc/monasca-notification
 ARG NOTIFICATION_BRANCH=master
 
 # To force a rebuild, pass --build-arg REBUILD="$(DATE)" when running
