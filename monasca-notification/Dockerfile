@@ -18,7 +18,7 @@ ENV CONFIG_TEMPLATE=true \
 RUN apk add --no-cache \
     python py2-pip py2-jinja2 py2-netaddr py2-yaml py2-gevent py2-greenlet mysql-client && \
   apk add --no-cache --virtual build-dep \
-    git python-dev make g++ && \
+    git python-dev make g++ linux-headers && \
   mkdir /monasca-notification && cd /monasca-notification && \
   git init && \
   git remote add origin $NOTIFICATION_REPO && \
