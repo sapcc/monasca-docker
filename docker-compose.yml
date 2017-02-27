@@ -77,7 +77,7 @@ services:
       - kafka
 
   monasca-notification:
-    image: monasca/notification:master
+    image: notque/notification:master
     environment:
       KAFKA_WAIT_FOR_TOPICS: "\
         retry-notifications,\
